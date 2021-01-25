@@ -6,7 +6,7 @@ from dash.dependencies import Input, Output
 import dash_table
 import os
 
-data = pd.read_excel('data/Concentrado_24_enero.xlsx')
+data = pd.read_excel('data/Concentrado_22_enero.xlsx')
 data.columns = data.columns.str.lower()
 
 materias_full = data.materia.unique()
