@@ -9,7 +9,7 @@ import os
 data = pd.read_excel('data/Concentrado_22_enero.xlsx')
 data.columns = data.columns.str.lower()
 
-materias_full = data.materia.unique()
+materias_full = sorted(data.materia.unique())
 docentes_full = data.docente.unique()
 
 #external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
